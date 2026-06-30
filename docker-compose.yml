@@ -20,6 +20,7 @@ services:
       - ./tools/scripts/06-seed-entregas.sql:/docker-entrypoint-initdb.d/06-seed-entregas.sql
       - ./tools/scripts/07-seed-notificacoes.sql:/docker-entrypoint-initdb.d/07-seed-notificacoes.sql
       - ./tools/scripts/08-add-motorista-veiculo-info.sql:/docker-entrypoint-initdb.d/08-add-motorista-veiculo-info.sql
+      - ./tools/scripts/09-migration-entregas-r7.sql:/docker-entrypoint-initdb.d/09-migration-entregas-r7.sql
     networks:
       - rotalog-network
     # TODO: Add health checks
